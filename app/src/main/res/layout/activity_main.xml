@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bLoad"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:text="@string/load"
+        app:layout_constraintBottom_toBottomOf="@+id/bTransform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bTransform"
+        app:layout_constraintTop_toTopOf="@+id/bTransform"/>
+
+    <Button
+        android:id="@+id/bTransform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/transform"
+        app:layout_constraintEnd_toStartOf="@+id/bLoad"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bCircle"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/bCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/circle"
+        app:layout_constraintBottom_toBottomOf="@+id/bTransform"
+        app:layout_constraintEnd_toStartOf="@+id/bTransform"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bTransform"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bTransform"
+        tools:srcCompat="@tools:sample/avatars"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
